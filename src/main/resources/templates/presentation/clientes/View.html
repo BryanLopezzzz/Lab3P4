@@ -17,7 +17,7 @@
     <tr th:each="c : ${clientes}">
       <td th:text="${c.getIdentificacion()}"/>
       <td th:text="${c.getNombre()}"/>
-      <td><a th:href="@{presentation/polizas/show(identificacion=${c.getIdentificacion()})}">...</a></td>
+      <td><a th:href="@{/presentation/polizas/show(identificacion=${c.getIdentificacion()})}">...</a></td>
     </tr>
   </table>
 </div>
